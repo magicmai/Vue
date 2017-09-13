@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>18.4 v-on</title>
+</head>
+<body>
+	<div id="app">
+		<button v-on="{mouseenter: onEnter, mouseleave: onOut}" @click="onClick">Click</button>
+
+		<!-- <form v-on:submit="onSubmit($event)"> -->
+		<form @keyup="onKeyup" @keyup.enter="onEnter" @submit.prevent="onSubmit">
+			<input type="text">
+			<button type="submit">提交</button>
+		</form>
+	</div>
+
+	<script src="./lib/vue.min.js"></script>
+	<script src="./js/18.4.js"></script>
+</body>
+</html>

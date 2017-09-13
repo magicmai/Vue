@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>18.6 v-model在其他元素及类型上的用法</title>
+</head>
+<body>
+	<div id="app">
+		<label for="">
+			女
+			<!-- <input name="sex" value="female" type="radio"> -->
+			<input v-model="sex" value="female" type="radio">
+		</label>
+		<label for="">
+			男
+			<!-- <input name="sex" value="male" type="radio"> -->
+			<input v-model="sex" value="male" type="radio">
+		</label>
+		<br>
+		{{sex}}
+		
+		<hr>
+		<label for="">
+			女
+			<!-- <input name="gender" value="female" type="checkbox"> -->
+			<input v-model="gender" value="female" type="checkbox">
+		</label>
+		<label for="">
+			男
+			<!-- <input name="gender" value="male" type="checkbox"> -->
+			<input v-model="gender" value="male" type="checkbox">
+		</label>
+		<br>
+		{{gender}}
+		
+		<hr>
+		<textarea v-model="article" cols="40" rows="5"></textarea>
+		
+		<hr>
+		<p>你来自哪里？（单选）</p>
+		<select v-model="from">
+			<option value="1">广州</option>
+			<option value="2">澳门</option>
+			<option value="3">香港</option>
+		</select>
+		{{from}}
+
+		<p>你要去哪里？（多选）</p>
+		<select v-model="go" multiple>
+			<option value="1">韩国</option>
+			<option value="2">美国</option>
+			<option value="3">法国</option>
+		</select>
+		{{go}}
+	</div>
+
+	<script src="./lib/vue.min.js"></script>
+	<script src="./js/18.6.js"></script>
+</body>
+</html>
