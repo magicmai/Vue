@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>18.15 自定义指令——基础配置、配置传参及修饰符</title>
+	<style>
+		.card {
+			width: 200px;
+			height: 60px;
+			background: #eee;
+			padding: 10px;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<div v-pin:true.bottom.right="card1.pinned" class="card">
+			<button @click="card1.pinned = !card1.pinned">固定/取消</button>
+			Lorem ipsum dolor sit amet, consectetur
+		</div>
+		<div v-pin="card2.pinned" class="card">
+			<a @click="card2.pinned = !card2.pinned" href="#">link it</a>
+			Lorem ipsum dolor sit amet, consectetur
+		</div>
+
+		<div>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab tempore nostrum unde odio officiis libero, sit cupiditate cumque voluptas iusto. Id nesciunt dicta, aliquid quam minus, est corporis ea facere!</div>
+			<div>Quia consequuntur ullam, sed corporis molestiae ab repellendus, error reiciendis officiis illo et impedit a laborum quis ex minima vero est enim sint. Repudiandae facere quae pariatur natus, rerum nesciunt?</div>
+			<div>Temporibus, id, ad. Libero inventore culpa porro, odio est. Tenetur minima, blanditiis aut ipsum libero saepe eveniet, labore nostrum dolore ullam odit quis, atque doloribus omnis quibusdam nulla adipisci modi.</div>
+			<div>Impedit magnam accusantium minus repudiandae. Quibusdam iure libero, porro repudiandae rem, quam placeat totam omnis, iusto aliquam repellendus. Quas eius consequuntur nam illum adipisci, placeat aut debitis ipsa sint at.</div>
+			<div>Maxime fugit velit repudiandae veritatis, eum saepe quis dignissimos tempore laborum dolorem corporis, sed nulla, laudantium doloremque in voluptatum officiis fugiat blanditiis delectus ipsum? Sed maxime eligendi, quia commodi. Error?</div>
+			<div>Eligendi cumque officia est reprehenderit, et magni eius ratione debitis dolore quos eos architecto excepturi aut. Porro, dolor, deserunt. Fuga magni cumque nihil totam eum blanditiis doloremque tenetur harum deserunt!</div>
+			<div>Perspiciatis saepe earum consectetur fugiat cum eaque! Animi non sed aut aspernatur saepe ad nulla sequi assumenda vero! Amet harum veritatis adipisci eligendi voluptate incidunt voluptatum ullam ut illum dolores?</div>
+			<div>Enim quod quidem blanditiis aspernatur alias quisquam maiores soluta qui facere accusantium minus nihil veniam vel sint beatae molestias eius, similique nobis hic, dignissimos voluptatem doloremque unde at explicabo. Explicabo.</div>
+			<div>Quis, corporis. Quaerat odio doloremque sequi ipsum vero cum dignissimos quam dicta, enim numquam. Veniam dolor assumenda, corrupti. Magni libero, consectetur! Quos alias cupiditate unde commodi nulla qui architecto, illum!</div>
+			<div>Quod fugiat molestias ratione, a ab illum, esse mollitia. Tempore reiciendis expedita facilis ex delectus optio doloribus illum nam, sed natus ipsam eos soluta omnis aspernatur, numquam tempora rem nulla.</div>
+		</div>
+	</div>
+
+	<script src="./lib/vue.min.js"></script>
+	<script src="./js/18.15.js"></script>
+</body>
+</html>

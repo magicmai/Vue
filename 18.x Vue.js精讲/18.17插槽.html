@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>18.17 插槽——slot</title>
+	<style>
+		.panel {
+			max-width: 300px;
+			border: 1px solid #999;
+			margin-bottom: 15px;
+		}
+		.panel > * {			
+			padding: 15px;
+		}
+		.panel .title {
+			border-bottom: 1px solid #999;
+		}
+		.panel .footer {
+			border-top: 1px solid #999;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<panel>
+			<div slot="title">
+				Hi
+			</div>
+			<div slot="content">
+				Hi Hi Hi!
+			</div>
+			<div slot="footer">
+				我在打招呼！
+			</div>
+		</panel>
+		<panel>
+			<div slot="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nisi quae, ipsum tempora consequatur nobis, labore inventore eaque dicta qui provident at quas totam autem ratione error obcaecati ullam nam!
+			</div>
+		</panel>
+	</div>
+
+	<template id="panel-tpl">
+		<div class="panel">
+			<div class="title">
+				<slot name="title">
+					你好
+				</slot>
+			</div>
+			<div class="content">
+				<slot name="content"></slot>
+			</div>
+			<div class="footer">
+				<slot name="footer">
+					更多信息  <!-- 指定默认值 -->
+				</slot>
+			</div>
+		</div>
+	</template>
+
+	<script src="./lib/vue.min.js"></script>
+	<script src="./js/18.17.js"></script>
+</body>
+</html>
