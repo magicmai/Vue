@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>19.1~2 安装和基本配置、传参及获取传参</title>
+</head>
+<body>
+	<div id="app">
+		<div>
+			<router-link to="/">首页</router-link>
+			<router-link to="/about">关于我们</router-link>
+			<router-link to="/user/王小花">王小花</router-link>
+			<router-link to="/user/李小明">李小明</router-link>
+		</div>
+		<div>
+			<router-view></router-view>
+		</div>
+	</div>
+	
+	<script src="./lib/vue.min.js"></script>
+	<script src="./lib/vue-router.min.js"></script>
+	<script src="./js/19.1.js"></script>
+</body>
+</html>
