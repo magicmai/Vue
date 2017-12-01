@@ -10,7 +10,7 @@ Vue 的引入：通过 `<script>` 标签引入:
 <script src="./lib/vue.min.js"></script>    // 例如 18.1 中 Vue 的引入
 ```
 
-基本模板：
+基本模板（在线展示：[codePen](https://codepen.io/magicmai/pen/jLoxJK?editors=1010)）：
 ```html
 
 //main.html
@@ -56,8 +56,6 @@ var app = new Vue({
     }
 });
 ```
-
-在线效果：[codePen](https://codepen.io/magicmai/pen/jLoxJK?editors=1010)
 
 ## 18.2 v-for 指令
 
