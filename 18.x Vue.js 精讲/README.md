@@ -1,17 +1,19 @@
-# 学习 Vue.js
+# 18.x Vue.js 精讲
+
+>地址：http://biaoyansu.com/18.x<br>
+>讲师：表严肃
 
 ## 18.1 Vue 的安装及语法
-Vue 的引入：通过 `<script>` 标签引入
+Vue 的引入：通过 `<script>` 标签引入:
 
-```
-// 例如 18.1 中 Vue 的引入：
-
-<script src="./lib/vue.min.js"></script>
+```html
+<script src="./lib/vue.min.js"></script>    // 例如 18.1 中 Vue 的引入
 ```
 
 基本模板：
-```
-<!-- 18.1.html -->
+```html
+
+//main.html
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,8 +64,10 @@ var app = new Vue({
 ## 18.3 v-bind 指令
 
 ## 18.4 v-on 指令
-v-on:submit.prevent
-v-on:submit.stop
+`v-on:submit.prevent`：阻止提交的默认跳转行为
+
+`v-on:submit.stop`：阻止提交
+
 `v-on:` 可以替换成 `@`
 
 ## 18.5 v-model 指令
