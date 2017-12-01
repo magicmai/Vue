@@ -4,7 +4,7 @@
 >讲师：表严肃
 
 ## 18.1 Vue 的安装及语法
-Vue 的引入：通过 `<script>` 标签引入:
+Vue 的引入：通过 `<script>` 标签引入：
 
 ```html
 <script src="./lib/vue.min.js"></script>    // 例如 18.1 中 Vue 的引入
