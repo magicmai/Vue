@@ -35,7 +35,7 @@ Vue 的引入：通过 `<script>` 标签引入:
         </div>
         <div>
             <input type="text" v-model="actor">
-            <span v-show="actor">你喜欢的演员：{{actor}}</span>
+            <span v-show="actor" placeholder="你喜欢的演员...">你喜欢的演员：{{actor}}</span>
         </div>
     </div>
 
